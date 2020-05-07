@@ -1,0 +1,52 @@
+.border-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  .border-define-container {
+    width: calc(100% - 400px);
+    height: 100%;
+    overflow-y: auto;
+  }
+  .border-example-container {
+    width: 300px;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+.border-img {
+  width: 260px;
+  height: 80px;
+  border: 6px solid transparent;
+}
+.border-img-round-content {
+  .border-img();
+  border-image: url(../../assets/borderContent/border.png) 30 30 round;
+}
+.border-img-stretch-content {
+  .border-img();
+  border-image: url(../../assets/borderContent/border.png) 30 30 stretch;
+}
+.border-img-repeat-content {
+  .border-img();
+  border-image: url(../../assets/borderContent/border.png) 30 30 repeat;
+}
+.border-radius {
+  width: 260px;
+  height: 80px;
+  border: 2px solid #4385f3;
+}
+.border-demo {
+  .border-radius();
+  border-radius: 10px;
+}
+.border-demo2 {
+  .border-radius();
+  border-radius: 20%;
+}
+.border-demo3 {
+  .border-radius();
+  border-radius: 20px 40px 20px 40px;
+}
