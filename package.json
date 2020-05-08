@@ -10,8 +10,10 @@
   "dependencies": {
     "antd": "^3.19.5",
     "dva": "^2.6.0-beta.6",
+    "mockjs": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "umi-request": "^1.2.19",
     "yarn": "^1.22.4"
   },
   "devDependencies": {

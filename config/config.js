@@ -9,6 +9,7 @@ export default {
         { path: '/home/borderContent', component: '../pages/home/borderContent' },
         { path: '/home/transition', component: '../pages/home/transition' },
         { path: '/home/animation', component: '../pages/home/animation' },
+        { path: '/home/requestDemo', component: '../pages/home/requestDemo' },
       ],
     },
     {
