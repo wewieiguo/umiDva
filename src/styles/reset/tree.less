@@ -1,0 +1,32 @@
+/*
+ * @Author: levi 
+ * @Date: 2019-12-10 14:27:20 
+ * @Last Modified by: levi
+ * @Last Modified time: 2020-01-10 13:55:47
+ */
+.ase-doc-tree.ant-tree li ul {
+  margin: 4px 0 0;
+  padding: 0 0 6px 18px;
+}
+.ase-doc-tree.ant-tree li {
+  margin-bottom: 4px;
+  min-height: 35px;
+  padding-bottom: 0;
+}
+.ase-doc-tree.ant-tree li .ant-tree-node-content-wrapper {
+  position: relative;
+  .ant-tree-title {
+    display: inline-block;
+    width: calc(100% - 24px);
+  }
+}
+
+.ase-doc-tree.ant-tree.ant-tree-directory
+  > li.ant-tree-treenode-selected
+  > span.ant-tree-node-content-wrapper::before,
+.ase-doc-tree.ant-tree.ant-tree-directory
+  .ant-tree-child-tree
+  > li.ant-tree-treenode-selected
+  > span.ant-tree-node-content-wrapper::before {
+  background: #b1d8fc;
+}

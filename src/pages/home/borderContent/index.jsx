@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './index.less';
 export default function BorderContent() {
+  console.log('boder');
   return (
     <div className={styles['border-container']}>
       <div className={styles['border-define-container']}>

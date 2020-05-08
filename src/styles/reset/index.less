@@ -1,0 +1,24 @@
+/*
+ * @Author: levi 
+ * @Date: 2019-10-28 13:51:17 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2020-03-06 15:56:01
+ * @des: 重置样式主文件
+ */
+@import './scrollbar.less';
+@import './popover.less';
+@import './menu.less';
+@import './button.less';
+@import './input.less';
+@import './collapse.less';
+@import './timeLine.less';
+@import './tree.less';
+@import './spin.less';
+@import './upload.less';
+
+// 上传功能不展示下载按钮
+.ant-upload-list-item-card-actions {
+  .anticon-download {
+    display: none;
+  }
+}

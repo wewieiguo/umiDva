@@ -1,0 +1,28 @@
+/*
+ * @Author: levi 
+ * @Date: 2019-10-22 11:27:24 
+ * @Last Modified by: levi
+ * @Last Modified time: 2019-11-04 11:17:03
+ * @des: 样式基础mixin
+ */
+
+// box shadow mixin
+.baseBoxShadowMixin () {
+  margin-bottom: 10px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 2px 2px 6px 0 #c6c6c6;
+}
+
+// text-overflow
+.text-overflow(@lineNum:1) when(@lineNum= 1) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-overflow(@lineNum:1) when not(@lineNum= 1) {
+  -webkit-box-orient: vertical; // 这个属性有时候浏览器会设置不上，暂时在元素style上手动添加解决，之后研究
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @lineNum;
+}

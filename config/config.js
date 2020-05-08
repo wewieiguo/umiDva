@@ -2,13 +2,20 @@ export default {
   treeShaking: true,
   routes: [
     {
-      path: '/',
+      path: '/home',
       component: '../layouts/index',
       routes: [
-        { path: '/', redirect: '/borderContent' },
-        { path: '/borderContent', component: '../pages/borderContent' },
-        { path: '/transition', component: '../pages/transition' },
-        { path: '/animation', component: '../pages/animation' },
+        { path: '/home', redirect: '/home/borderContent' },
+        { path: '/home/borderContent', component: '../pages/home/borderContent' },
+        { path: '/home/transition', component: '../pages/home/transition' },
+        { path: '/home/animation', component: '../pages/home/animation' },
+      ],
+    },
+    {
+      path: '/',
+      routes: [
+        { path: '/', redirect: '/login' },
+        { path: '/login', component: '../pages/login' },
       ],
     },
   ],

@@ -1,0 +1,51 @@
+/*
+ * @Author: gww 
+ * @Date: 2019-10-28 13:51:40 
+ * @Last Modified by: levi
+ * @Last Modified time: 2019-11-22 09:56:23
+ * @des: 重置antd menu 样式
+ */
+.top-hignlight-bar-nav-menu {
+  .ant-menu-horizontal > .ant-menu-item,
+  .ant-menu-horizontal > .ant-menu-submenu {
+    border-top: 6px solid rgba(39, 68, 133, 1);
+    border-bottom: none;
+    text-align: center;
+    line-height: 74px;
+    color: #868c9a;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  .ant-menu-horizontal > .ant-menu-item:hover,
+  .ant-menu-horizontal > .ant-menu-submenu:hover {
+    color: #4e83fc;
+    font-weight: 400;
+    border-bottom: none;
+    border-top: 6px solid rgba(39, 68, 133, 1);
+    background: none;
+    transition: 0.3s;
+  }
+  .ant-menu-horizontal > .ant-menu-item-active,
+  .ant-menu-horizontal > .ant-menu-submenu-active,
+  .ant-menu-horizontal > .ant-menu-item-open,
+  .ant-menu-horizontal > .ant-menu-submenu-open,
+  .ant-menu-horizontal > .ant-menu-item-selected,
+  .ant-menu-horizontal > .ant-menu-submenu-selected {
+    border-top: 6px solid #4e83fc;
+    border-bottom: none;
+    background: linear-gradient(180deg, rgba(31, 46, 84, 1) 0%, rgba(31, 46, 84, 0.2) 100%);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .top-hignlight-bar-nav-menu {
+    .ant-menu-horizontal > .ant-menu-item,
+    .ant-menu-horizontal > .ant-menu-submenu {
+      width: 150px;
+    }
+  }
+}

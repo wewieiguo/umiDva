@@ -1,4 +1,4 @@
-import styles from './index.css';
+import styles from './index.less';
 import Header from './component/header';
 function BasicLayout(props) {
   return (

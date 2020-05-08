@@ -1,6 +1,6 @@
 export const NAVMENU_CONFIG = [
   {
-    path: 'borderContent',
+    path: '/home/borderContent',
     title: '边框',
   },
   {

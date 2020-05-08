@@ -1,0 +1,38 @@
+/*
+ * @Author: gww 
+ * @Date: 2019-12-05 16:56:25 
+ * @Last Modified by: gww
+ * @Last Modified time: 2019-12-05 17:21:35
+ * @ 重置antd的折叠面板样式
+ */
+//账号管理组织架构样式
+.account-management-list-content {
+  .ant-collapse {
+    border: none;
+    border-radius: 0;
+    .ant-collapse-item {
+      border: none;
+      border-radius: 0;
+      .ant-collapse-header {
+        border-top: none;
+        background: rgba(244, 244, 244, 1);
+        .ant-collapse-extra {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+  .ant-collapse-content {
+    border-top: none;
+    .ant-collapse-content-box {
+      padding: 0px;
+    }
+  }
+  .ant-list-split .ant-list-item {
+    padding: 0px 0px 0px 70px;
+    border-bottom: none;
+    height: 46px;
+    line-height: 46px;
+    position: relative;
+  }
+}
